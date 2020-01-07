@@ -13,6 +13,11 @@
 		2295F4A122E6465700B3CFD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2295F49F22E6465700B3CFD1 /* Main.storyboard */; };
 		2295F4A322E6465A00B3CFD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2295F4A222E6465A00B3CFD1 /* Assets.xcassets */; };
 		2295F4A622E6465A00B3CFD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2295F4A422E6465A00B3CFD1 /* LaunchScreen.storyboard */; };
+		22C3F73B22E8D05100E81C79 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C3F73A22E8D05100E81C79 /* Planet.swift */; };
+		22C3F74122E8DA2300E81C79 /* stars.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 22C3F74022E8DA2300E81C79 /* stars.scnp */; };
+		22C3F74322E8DA3400E81C79 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C3F74222E8DA3400E81C79 /* star.png */; };
+		22C3F74522E8DB0B00E81C79 /* sun.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 22C3F74422E8DB0B00E81C79 /* sun.scnp */; };
+		22C3F74722E8DB1300E81C79 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C3F74622E8DB1300E81C79 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		2295F4A222E6465A00B3CFD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2295F4A522E6465A00B3CFD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2295F4A722E6465A00B3CFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C3F73A22E8D05100E81C79 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		22C3F74022E8DA2300E81C79 /* stars.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = stars.scnp; sourceTree = "<group>"; };
+		22C3F74222E8DA3400E81C79 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		22C3F74422E8DB0B00E81C79 /* sun.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = sun.scnp; sourceTree = "<group>"; };
+		22C3F74622E8DB1300E81C79 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				2295F4A222E6465A00B3CFD1 /* Assets.xcassets */,
 				2295F4A422E6465A00B3CFD1 /* LaunchScreen.storyboard */,
 				2295F4A722E6465A00B3CFD1 /* Info.plist */,
+				22C3F73A22E8D05100E81C79 /* Planet.swift */,
+				22C3F74222E8DA3400E81C79 /* star.png */,
+				22C3F74022E8DA2300E81C79 /* stars.scnp */,
+				22C3F74422E8DB0B00E81C79 /* sun.scnp */,
+				22C3F74622E8DB1300E81C79 /* spark.png */,
 			);
 			path = SolorSystem;
 			sourceTree = "<group>";
@@ -126,9 +141,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2295F49C22E6465700B3CFD1 /* art.scnassets in Resources */,
+				22C3F74522E8DB0B00E81C79 /* sun.scnp in Resources */,
 				2295F4A622E6465A00B3CFD1 /* LaunchScreen.storyboard in Resources */,
 				2295F4A322E6465A00B3CFD1 /* Assets.xcassets in Resources */,
 				2295F4A122E6465700B3CFD1 /* Main.storyboard in Resources */,
+				22C3F74722E8DB1300E81C79 /* spark.png in Resources */,
+				22C3F74122E8DA2300E81C79 /* stars.scnp in Resources */,
+				22C3F74322E8DA3400E81C79 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C3F73B22E8D05100E81C79 /* Planet.swift in Sources */,
 				2295F49E22E6465700B3CFD1 /* ViewController.swift in Sources */,
 				2295F49A22E6465700B3CFD1 /* AppDelegate.swift in Sources */,
 			);
@@ -284,8 +304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79Q9WFF2X8;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = SolorSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.SolorSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +324,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79Q9WFF2X8;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = SolorSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.SolorSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
